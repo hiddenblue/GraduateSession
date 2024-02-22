@@ -1,11 +1,13 @@
-# 南方科技大学研究生教务系统登录API
+# 南方科技大学研究生教务系统Python模拟登录API
 
 ## 使用方法
 
 **安装依赖**
 
-`pip install requests`
-`pip install lxml`
+```py
+pip install requests
+pip install lxml
+```
 
 **填入用户名和密码**
 
@@ -22,6 +24,9 @@ if __name__ == '__main__':
     session = GraduateSession(username, password)
     session.login()  # 登录cas和tis系统
 ```
+
+输出登录成功则已经完成登录认证
+
 
 然后可以用session对象执行 GET POST 等一系列请求
 ```py
